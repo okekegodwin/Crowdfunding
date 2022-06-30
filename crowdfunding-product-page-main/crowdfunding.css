@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --black: hsl(0, 0%, 0%);
+    --dark-grey: hsl(0, 0%, 48%);
+}
+
+body {
+    background-color: rgb(250, 248, 248);
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+.crowdfund {
+    padding-top: 2rem;
+    display: flex;
+    gap: 32rem;
+    padding-left: 10rem;
+    color: white;
+}
+
+.crowdfund ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.crowdfund h2 {
+    font-size: 2.5rem;
+}
+
+.section1 {
+    margin-bottom: 16rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .contact {
+        transform: scaleY(0);
+        transition: 0.4s;
+        transform-origin: top;
+        position: absolute;
+        margin-left: -31rem;
+        top: 4rem;
+        padding: 2rem;
+        background-color: white;
+        color: black;
+        width: 50%;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        z-index: 100;
+        margin-bottom: 10rem;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        margin-left: -18rem;
+    }
+
+    body {
+        background-image: url(./crowdfunding-product-page-main/images/image-hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .crowdfund h2 {
+        font-size: 1.5rem;
+    }
+
+    .crowdfund {
+        padding-left: 2rem;
+    }
+}
+
+.section2 {
+    margin-left: 21rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.bamboo {
+    margin-top: -30px;
+    border: solid;
+    border-radius: 0.9rem;
+    border-style: none;
+    width: 700px;
+    background-color: white;
+    height: 240px;
+    padding-block: 3rem;
+}
+
+.logo {
+    position: absolute;
+    top: 275px;
+    left: 650px;
+}
+
+.mastercraft h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.mastercraft p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-grey);
+}
+
+.button {
+    margin-left: 3rem;
+    display: flex;
+    gap: 14rem;
+}
+
+.mastercraft button {
+    border: solid;
+    border-radius: 3rem;
+    width: 12rem;
+    height: 3.5rem;
+    color: rgb(255, 253, 253);
+    background-color: var(--dark-cyan);
+    border-style: none;
+    cursor: pointer;
+}
+
+.bookmark {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bookmark img {
+    position: relative;
+    width: 3rem;
+}
+
+.bookmark button {
+    display: flex;
+    width: 12rem;
+    color: var(--black);
+    background-color: lightgray;
+    gap: 0.7rem;
+    height: 3rem;
+}
+
+.bookmark p {
+    padding-top: 0.7rem;
+}
+
+.section3 {
+    border: solid;
+    border-radius: 0.9rem;
+    background-color: white;
+    border-style: none;
+    width: 700px;
+    margin-left: 21rem;
+    height: 170px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.money {
+    display: flex;
+    gap: 3.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 2rem;
+}
+
+.money h1 {
+    font-size: 2rem;
+}
+
+.money p {
+    color: var(--dark-grey);
+}
+
+.section3 input {
+    width: 600px;
+    /* height: 40px; */
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    /* width: 10px; */
+    height: 15px;
+    opacity: 7rem;
+    outline: none;
+    background-color: var(--dark-cyan);
+    /* opacity: 0.7; */
+    -webkit-appearance: var(--dark-cyan);
+    border-radius: 3rem;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 2rem;
+}
+
+.section4 {
+    margin-left: 21rem;
+    border: solid;
+    border-radius: 0.9rem;
+    border-style: none;
+    background-color: white;
+    width: 700px;
+    height: 1200px;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+.project p {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--dark-grey);
+    line-height: 1.6rem;
+}
+
+.stand {
+    border: solid 1.5px lightgray;
+    border-radius: 0.9rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin-bottom: 2rem;
+}
+
+.font {
+    display: flex;
+    gap: 16rem;
+    margin-bottom: 1.8rem;
+}
+
+.font h3 {
+    color: var(--dark-cyan);
+}
+
+.natural {
+    color: var(--dark-grey);
+    margin-bottom: 2rem;
+}
+
+.select1 {
+    display: flex;
+    gap: 18.5rem;
+}
+
+.select1 button {
+    border: solid;
+    border-radius: 3rem;
+    width: 12rem;
+    height: 3.5rem;
+    color: rgb(255, 253, 253);
+    background-color: var(--dark-cyan);
+    border-style: none;
+    cursor: pointer;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: -0.7rem;
+}
+
+.left {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+}
+
+.left p {
+    color: var(--dark-grey);
+}
+
+.edition {
+    border: solid 1.5px lightgrey;
+    border-radius: 0.9rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin-bottom: 2rem;
+}
+
+.font2 {
+    display: flex;
+    gap: 12.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.font2 h3 {
+    color: var(--moderate-cyan);
+}
+
+.black {
+    color: var(--dark-grey);
+    margin-bottom: 2rem;
+}
+
+.left2 {
+    display: flex;
+    gap: 1rem;
+}
+
+.left2 h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: -0.7rem;
+}
+
+.left2 p {
+    color: var(--dark-grey);
+}
+
+.select2 {
+    display: flex;
+    gap: 19.5rem;
+}
+
+.select2 button {
+    border: solid;
+    border-radius: 3rem;
+    width: 12rem;
+    height: 3.5rem;
+    color: rgb(255, 253, 253);
+    background-color: var(--moderate-cyan);
+    border-style: none;
+    cursor: pointer;
+}
+
+.mahogany {
+    border: solid 1.5px lightgray;
+    border-radius: 0.9rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin-bottom: 2rem;
+}
+
+.font3 {
+    display: flex;
+    gap: 8.01rem;
+    margin-bottom: 1.8rem;
+}
+
+.font3 h3 {
+    color: rgb(169, 231, 231);
+}
+
+.font3 h2 {
+    color: var(--dark-grey);
+}
+
+.shirt {
+    color: lightgray;
+    margin-bottom: 2rem;
+}
+
+.select3 {
+    display: flex;
+    gap: 20.5rem;
+}
+
+.select3 button {
+    border: solid;
+    border-radius: 3rem;
+    width: 12rem;
+    height: 3.5rem;
+    color: rgb(255, 253, 253);
+    background-color: darkgray;
+    border-style: none;
+    cursor: pointer;
+}
+
+.left3 {
+    display: flex;
+    gap: 1rem;
+}
+
+.left3 p {
+    color: var(--dark-grey);
+}
+
+.left3 h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: -0.7rem;
+}
+
+@media (max-width: 750px) {
+    .root {
+        width: auto;
+    }
+}
